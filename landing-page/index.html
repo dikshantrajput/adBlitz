@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdBlitz - Turbocharge Your YouTube Experience</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="google-site-verification" content="gjQ3HrtdH-D6K9ddRREWOzw-K9HSrJrRMR7mH_phbp4" />
+    <meta name="description" content="AdBlitz enhances your YouTube experience by automatically skipping ads, skimming through non-skippable ads, handling multiple ads seamlessly, and providing a lightweight, hassle-free viewing experience. Download now for Chrome, Firefox, Opera, or other Chromium-based browsers.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(to right, #0f172a, #334155);
+            color: #fff;
+        }
+
+        .feature-card {
+            background-color: #2d3748;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            transition: border-color 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .feature-card i {
+            color: #f7db40;
+        }
+
+        .feature-card:hover {
+            border: 2px solid #ffd700;
+        }
+
+        .feature-card h3 {
+            color: #e2e8f0;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #cbd5e0;
+            line-height: 1.6;
+        }
+
+        .installation-section {
+            background-color: #1a202c;
+            padding: 4rem 0;
+        }
+
+        .installation-steps {
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .installation-steps .step {
+            background-color: #2d3748;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            width: 30%;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 0.5s ease forwards;
+            transition: border-color 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .installation-steps .step:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .installation-steps .step:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .installation-steps .step h3 {
+            color: #e2e8f0;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .installation-steps .step p {
+            color: #cbd5e0;
+            line-height: 1.6;
+        }
+
+        .installation-steps .step .lottie-animation {
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .browser-downloads {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .browser-downloads a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .browser-downloads a:hover {
+            transform: translateY(-5px);
+        }
+
+        .browser-downloads a span {
+            font-size: 0.875rem;
+            color: #cbd5e0;
+        }
+
+        .install-container {
+            transform: scale(1.15) !important;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .border-transition {
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .border-transition:hover {
+            border-color: transparent;
+        }
+
+        .border-transition:hover .border-top-animation {
+            animation: border-top-animation 0.5s linear forwards;
+        }
+
+        .border-transition:hover .border-right-animation {
+            animation: border-right-animation 0.5s linear 0.5s forwards;
+        }
+
+        .border-transition:hover .border-bottom-animation {
+            animation: border-bottom-animation 0.5s linear 1s forwards;
+        }
+
+        .border-transition:hover .border-left-animation {
+            animation: border-left-animation 0.5s linear 1.5s forwards;
+        }
+
+        .border-top-animation,
+        .border-right-animation,
+        .border-bottom-animation,
+        .border-left-animation {
+            position: absolute;
+            background-color: #ffd700;
+            transition: all 0.3s ease;
+        }
+
+        .border-top-animation {
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+        }
+
+        .border-right-animation {
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 0;
+        }
+
+        .border-bottom-animation {
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+        }
+
+        .border-left-animation {
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 0;
+        }
+
+        @keyframes border-top-animation {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes border-right-animation {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(100% - 4px);
+            }
+        }
+
+        @keyframes border-bottom-animation {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes border-left-animation {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(100% - 4px);
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .logo {
+            max-width: 70px;
+        }
+
+        .browser-icon {
+            width: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 4rem 1rem;
+                text-align: center;
+            }
+
+            .hero-section .flex {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-section button {
+                margin: 0.5rem;
+            }
+
+            .installation-steps {
+                flex-direction: column;
+            }
+
+            .installation-steps .step {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .feature-card {
+                padding: 1rem;
+            }
+
+            .grid-cols-1,
+            .grid-cols-2,
+            .grid-cols-4 {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .browser-downloads {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .browser-downloads a {
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <header class="bg-gray-900 py-4 text-white">
+                <div class="container mx-auto px-4 flex justify-between items-center">
+                    <a href="https://github.com/dikshantrajput/adBlitz" target="__dk" class="text-xl font-bold">
+                        <img src="icon.png" class="logo" alt="logo" />
+                    </a>
+                    <nav>
+                        <ul class="flex space-x-4">
+                            <a href="https://github.com/dikshantrajput/adBlitz" target="__dk" class="text-xl font-bold">
+                                <i class="fa-brands fa-github fa-2x"></i>
+                            </a>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="hero-section py-20">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold mb-4">AdBlitz - Your Shortcut to Ad-Free Streaming</h1>
+                    <p class="text-lg font-bold text-yellow-400 mb-8 italic">Not an ad blocker</p>
+                    <div class="flex">
+                        <a href="installer.html" target="__dk">
+                            <button onclick="downloadExtension('chrome')" class="mr-3">
+                                <img src="chrome.svg" class="browser-icon" alt="logo" />
+                            </button>
+                        </a>
+                        <a href="installer.html" target="__dk">
+
+                            <button class="mx-3" onclick="downloadExtension('firefox')">
+                                <img src="firefox.svg" class="browser-icon" alt="logo" />
+                            </button>
+                        </a>
+
+
+                        <a href="installer.html" target="__dk">
+
+                            <button class="mx-3" onclick="downloadExtension('chrome')">
+                                <img src="opera.svg" class="browser-icon" alt="logo"/>
+                            </button>
+                        </a>
+
+                        <a href="installer.html" target="__dk">
+
+                            <button class="mx-3" onclick="downloadExtension('chrome')">
+                                <img src="chromium.svg" class="browser-icon" alt="logo"/>
+                            </button>
+                        </a>
+
+                        <a href="installer.html" target="__dk">
+
+                            <button class="mx-3" onclick="downloadExtension('chrome')">
+                                <img src="edge.svg" class="browser-icon" alt="logo" />
+                            </button>
+                        </a>
+
+
+                    </div>
+                    <p class="text-xs text-gray-50 pt-4">download for Chromium if your browser is Chromium based but not
+                        one of above</p>
+                </div>
+            </div>
+
+            <div id="features" class="container mx-auto px-4 py-12">
+                <h2 class="text-3xl font-bold mb-8">Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="feature-card animate__animated animate__fadeInUp border-transition">
+                        <h3>
+                            <i class="fa-solid fa-forward mr-1"></i>
+                            Automatic Skips
+                        </h3>
+                        <p>Say goodbye to interruptions as AdBlitz automatically skips skippable ads on YouTube videos.
+                        </p>
+                        <span class="border-top-animation"></span>
+                        <span class="border-right-animation"></span>
+                        <span class="border-bottom-animation"></span>
+                        <span class="border-left-animation"></span>
+                    </div>
+                    <div class="feature-card animate__animated animate__fadeInUp border-transition">
+                        <h3>
+                            <i class="fa-solid fa-fast-forward mr-1"></i>
+                            Ad Skimming
+                        </h3>
+                        <p>For non-skippable ads, AdBlitz skims through them at an accelerated speed (e.g., 16x), saving
+                            you valuable time.</p>
+                        <span class="border-top-animation"></span>
+                        <span class="border-right-animation"></span>
+                        <span class="border-bottom-animation"></span>
+                        <span class="border-left-animation"></span>
+                    </div>
+                    <div class="feature-card animate__animated animate__fadeInUp border-transition">
+                        <h3>
+                            <i class="fa-solid fa-forward"></i><i class="fa-solid fa-forward mr-1"></i>
+                            Multi-Ad Skipping
+                        </h3>
+                        <p>Handles multiple ads with ease, keeping your viewing flow uninterrupted.</p>
+                        <span class="border-top-animation"></span>
+                        <span class="border-right-animation"></span>
+                        <span class="border-bottom-animation"></span>
+                        <span class="border-left-animation"></span>
+                    </div>
+                    <div class="feature-card animate__animated animate__fadeInUp border-transition">
+                        <h3>
+                            <i class="fa-solid fa-gears mr-1"></i>
+                            Background Magic
+                        </h3>
+                        <p>Works seamlessly in the background, providing a smooth and hassle-free viewing experience.
+                        </p>
+                        <span class="border-top-animation"></span>
+                        <span class="border-right-animation"></span>
+                        <span class="border-bottom-animation"></span>
+                        <span class="border-left-animation"></span>
+                    </div>
+                    <div class="feature-card animate__animated animate__fadeInUp border-transition">
+                        <h3>
+                            <i class="fa-solid fa-bolt mr-1"></i>
+                            Lightweight
+                        </h3>
+                        <p>Easy to install and use, without any unnecessary bloat.</p>
+                        <span class="border-top-animation"></span>
+                        <span class="border-right-animation"></span>
+                        <span class="border-bottom-animation"></span>
+                        <span class="border-left-animation"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-900 text-white py-4">
+            <p class="container mx-auto px-4 flex justify-between items-center w-full">
+                This extension is not endorsed by or affiliated with YouTube. It is an independent project developed
+                solely for the purpose of improving user experience.
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+<script>
+    function downloadExtension(platform) {
+        let filePath = 'chrome-installer.zip';
+        let fileName = 'adBlitz.zip';
+        if (platform === "firefox") {
+            filePath = "firefox-installer.zip"
+        }
+        let link = document.createElement('a');
+        link.href = filePath;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
+<script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+</html>

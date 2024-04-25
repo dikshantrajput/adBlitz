@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdBlitz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ad-count {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      color: #007bff;
+    }
+
+    .ad-count span {
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AdBlitz</h1>
+    <p class="ad-count">Total ads skipped: <span id="adCount">0</span></p>
+    <p class="ad-count">Total ads speeded: <span id="adSpeed">0</span></p>
+    <div class="footer">Made with ❤️ by <a href="https://github.com/dikshantrajput" target="__dk"><span id="name">Dikshant Rajput</span></a></div>
+  </div>
+  <script type="module" src="/src/popup/index.js"></script>
+</body>
+</html>

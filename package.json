@@ -1,0 +1,29 @@
+{
+  "name": "AdBlitz",
+  "version": "0.1.0",
+  "author": "Dikshant Rajput",
+  "description": "AdBlitz: Your Shortcut to Ad-Free Streaming",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "vanilla",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{js,json,css,scss,md}'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.11"
+  }
+}
