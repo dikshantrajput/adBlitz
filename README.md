@@ -12,7 +12,7 @@ AdBlitz is your ultimate tool for turbocharging your YouTube viewing experience.
 
 <!-- TODO: update the readme file for proper links -->
 ## Installation (on Chromium-based browsers)
-1. Clone the [extension repository](https://github.com/dikshantrajput/adBlitz) or [download](https://github.com/dikshantrajput/adBlitz/blob/main/ad-blitz.zip).
+1. [Download](https://github.com/dikshantrajput/adBlitz/blob/main/ad-blitz.zip) the extension.
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable Developer Mode by toggling the switch in the upper-right corner.
 4. Click on the "Load unpacked" button located at the top-left corner of the extensions page.
@@ -20,7 +20,7 @@ AdBlitz is your ultimate tool for turbocharging your YouTube viewing experience.
 6. Confirm the installation when prompted.
 
 ## Installation (on Firefox)
-1. Clone the [extension repository](https://github.com/dikshantrajput/adBlitz) or [download](https://github.com/dikshantrajput/adBlitz/blob/main/ad-blitz-firefox.zip).
+1. [Download](https://github.com/dikshantrajput/adBlitz/blob/main/ad-blitz-firefox.zip) the extension.
 2. Open Firefox and type `about:debugging` in the address bar, then press Enter.
 3. Click on "This Firefox" in the left sidebar.
 4. Click on the "Load Temporary Add-on" button.
