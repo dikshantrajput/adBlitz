@@ -321,6 +321,25 @@
                 margin: 0.5rem;
             }
         }
+
+        .video-container {
+            max-width: 800px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -453,6 +472,17 @@
                         <span class="border-left-animation"></span>
                     </div>
 
+                </div>
+            </div>
+            <div class="video-section py-12">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-8 text-center">See AdBlitz in Action</h2>
+                    <div class="video-container mx-auto">
+                        <div class="video-wrapper relative pt-[56.25%] shadow-lg rounded-lg overflow-hidden">
+                            <iframe class="absolute top-0 left-0 w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/krOcWRMEcyM" frameborder="0"  allowfullscreen></iframe>
+                        </div>
+                        <p class="text-center text-gray-400 mt-4">Experience the smooth, ad-free streaming with AdBlitz</p>
+                    </div>
                 </div>
             </div>
         </div>
