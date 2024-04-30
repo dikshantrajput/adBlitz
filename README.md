@@ -20,12 +20,9 @@ AdBlitz is your ultimate tool for turbocharging your YouTube viewing experience.
 6. Confirm the installation when prompted.
 
 ## Installation (on Firefox)
-1. [Download](https://ad-blitz.vercel.app/) the extension by clicking on your firefox icon.
-2. Open Firefox and type `about:debugging` in the address bar, then press Enter.
-3. Click on "This Firefox" in the left sidebar.
-4. Click on the "Load Temporary Add-on" button.
-5. Navigate to the directory where you cloned or downloaded the extension, then select the manifest.json file.
+1. [Download](https://addons.mozilla.org/en-US/firefox/addon/adblitz/) the extension.
 6. Confirm the installation when prompted.
+6. Give permissions by right clicking on extension.
 
 ## How to Run Locally
 1. **Clone the Repository**: 

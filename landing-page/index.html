@@ -502,13 +502,16 @@
         let fileName = 'adBlitz.zip';
         if (platform === "firefox") {
             filePath = "firefox-installer.zip"
+            window.open("https://addons.mozilla.org/en-US/firefox/addon/adblitz/", "__blank")
+            return
+        }else{
+            let link = document.createElement('a');
+            link.href = filePath;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
-        let link = document.createElement('a');
-        link.href = filePath;
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
     }
 </script>
 
